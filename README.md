@@ -1,54 +1,75 @@
-# React + TypeScript + Vite
+# 📄 Document Reviewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React.js-based document reviewer** for confirming and validating extracted data from scanned or uploaded documents. The application includes **field highlighting**, **zoom**, **hover interactions**, **selection confirmation** offering an intuitive interface for data verification workflows.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Review and confirm extracted fields
+- Zoom and pan document preview
+- Highlight fields with hover and selection interactions
+- Modal-based field confirmation and review approval
+- Built with [Vite](https://vitejs.dev/) for fast development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## 🛠 Tech Stack
+
+- React.js (with TypeScript)
+- SCSS for styling
+- React Bootstrap for UI layout
+- Vite for development & build tooling
+
+---
+
+## 📦 Recommended Package Manager
+
+Use **Yarn** for dependency management (preferred for consistency).
+
+---
+
+## 📁 Project Setup
+
+### 1. Clone the Repository
+
+```
+git clone https://github.com/lekhnatholi/document-reviewer.git
+cd document-reviewer
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependecy
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+```
+yarn
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+#### or using NPM
+
+```
+npm install
+```
+
+### 3. Run in Development mode
+
+To start the development server
+
+```
+yarn dev
+```
+
+### 4. Build for production
+
+To create a production-ready build
+
+```
+yarn build
+```
+
+### 5. Start production server
+
+To previw the production build locally
+
+```
+yarn start
 ```
